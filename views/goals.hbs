@@ -2,16 +2,30 @@
 <html>
 
 <head>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
   <style>
   body {
     font-family: 'Roboto', sans-serif;
   }
   div.a {
-    margin-left: 10px;
     margin-top: 50px;
-    line-height: 0%;
+    line-height: 100%;
     font-size: 25px;
+  }
+  div.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+  #b{
+    height: 50px;
+    background-color: blue;
+  }
+  #ShortGoal {
+    display:inline;
+    background-color: #B0B0B0 ;
+  }
+  #LongGoal {
+    display:inline;
+    background-color: #2f2f2f ;
   }
   </style>
 
@@ -21,11 +35,19 @@
 <body>
   <div class='a'>
     <p>F I N A N C I A L</p>
-    <div class='b'>
-      <p>G O A L S</p>
+    <div id='b'>
+      <p style="margin-left:10px;color:white">G O A L S</p>
     </div>
   </div>
-
+  <div id="ShortGoal" >
+    <h1>Short Term Goal</h1>
+    <p>
+      HELLO!
+    </p>
+  </div>
+  <div id="longGoal">
+    <h1>Long Term Goal</h1>
+  </div>
 </body>
 
 </html>
