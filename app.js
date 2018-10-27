@@ -14,6 +14,18 @@ app.get('/',(req,res) =>{
 app.get('/login',(req,res) =>{
   res.render("login",{layout: false});
 })
+app.get('/home',(req,res) =>{
+  res.render("home",{layout: false});
+})
+app.get('/goals',(req,res) =>{
+  res.render("goals",{layout: false});
+})
+app.get('/spending',(req,res) =>{
+  res.render("spending",{layout: false});
+})
+app.get('/transaction',(req,res) =>{
+  res.render("transaction",{layout: false});
+})
 
 app.listen(port);
 
