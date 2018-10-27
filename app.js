@@ -15,16 +15,16 @@ app.get('/login',(req,res) =>{
   res.render("login",{layout: false});
 })
 app.get('/home',(req,res) =>{
-  res.render("home",{layout: false});
+  res.render("home");
 })
 app.get('/goals',(req,res) =>{
-  res.render("goals",{layout: false});
+  res.render("goals");
 })
 app.get('/spending',(req,res) =>{
-  res.render("spending",{layout: false});
+  res.render("spending");
 })
 app.get('/transaction',(req,res) =>{
-  res.render("transaction",{layout: false});
+  res.render("transaction");
 })
 
 app.listen(port);
